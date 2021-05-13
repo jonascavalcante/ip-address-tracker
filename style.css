@@ -134,10 +134,10 @@ main {
     justify-content: center;
 }
 
-    .leaflet-control-container .leaflet-top:first-child {
-        top: unset;
-        bottom: 10px;
-    }
+.leaflet-control-container .leaflet-top:first-child {
+    top: unset;
+    bottom: 10px;
+}
 
 .location-icon {
     position: relative;
@@ -222,6 +222,7 @@ footer {
     }
 
     main {
+        height: 528px;
         padding-top: 150px;
     }
 
