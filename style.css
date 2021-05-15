@@ -57,16 +57,6 @@ input {
     cursor: pointer;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-input[type=number] {
-  -moz-appearance: textfield;
-}
-
 button {
     width: 58px;
     background-color: #000;
@@ -95,7 +85,6 @@ button:hover {
     z-index: 1000;
 }
 
-
 .info {
     width: 100%;
     padding-right: 10px;
@@ -112,9 +101,19 @@ h4 {
 }
 
 h2 {
+    height: 51.8px;
     font-weight: 500;
     margin-top: 12px;
     color: var(--veryDarkGray);
+    overflow-y: auto;
+}
+h2::-webkit-scrollbar {
+    width: 5px;
+}
+
+h2::-webkit-scrollbar-thumb {
+    background-color: var(--darkGray);
+    border-radius: 10px;
 }
 
 hr {
@@ -176,6 +175,10 @@ footer {
     .info:nth-last-child(1) {
         width: 100%;
         padding: 0;
+    }
+
+    h2 {
+        height: auto;
     }
 
     main {
